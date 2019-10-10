@@ -1,3 +1,6 @@
+#this program is made to code a game of rock-paper-scissors which is a very popular game between the youth and also the old.
+#This game has been used from old times to resolve conflicts and have fun.
+
 from random import randint
 def print_menu():
     global items
