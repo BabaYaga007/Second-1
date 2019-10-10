@@ -1,8 +1,9 @@
 from random import randint
 def print_menu():
-    print('1 for Stone')
-    print('2 for Paper')
-    print('3 for Scissor')
+    global items
+    print('1 for',items[0])
+    print('2 for',items[1])
+    print('3 for',items[2])
     print('Enter your choice')
 
 def print_score(a,b):
@@ -11,18 +12,19 @@ def print_score(a,b):
     print('Computer =',b)
 
 choice = ['stone','paper','scissor']
-
+items = input()
+items = items.split()
 a=0
 b=0
 while(True):
     print_menu()
     ch = int(input())
     if ch==1 :
-        player = 'stone'
+        player = items[0]
     elif ch==2 :
-        player = 'paper'
+        player = items[1]
     elif ch==3 :
-        player = 'scissor'
+        player = items[2]
     else :
         print('Invalid Choice. Try Again')
         continue
