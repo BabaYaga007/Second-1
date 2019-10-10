@@ -40,7 +40,11 @@ def score(dice):
             score += 0
     return score
 
-print(score([5,1,3,4,1]))
-print(score([1,1,1,3,1]))
-print(score([2,4,4,5,4]))
+n = int(input())
+print('9 to exit')
+print('any to continue')
+if n != 9:
+    print(score([5,1,3,4,1]))
+    print(score([1,1,1,3,1]))
+    print(score([2,4,4,5,4]))
     
